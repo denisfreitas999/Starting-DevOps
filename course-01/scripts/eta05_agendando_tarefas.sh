@@ -1,0 +1,1 @@
+* * * * * home/denisfreitas999/monitoramento.sh >> home/denisfreitas999/saida_nginx.txt

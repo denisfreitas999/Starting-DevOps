@@ -146,3 +146,29 @@ Verificando status do nginx
 **Verificar a pasta scripts**
 
 ***
+
+**Etapa 05**
+
+Criando um script para monitoramento do Nginx: `monitoramento.sh`. **Verificar a pasta scripts.**
+
+```bash
+denisfreitas999@DESKTOP-HLKUBTJ:~/scripts$ bash monitoramento.sh
+Nginx está operando 2024-07-30 17:57:14
+```
+
+Parando o serviço com o `sudo service nginx stop` e verificando novamente:
+
+```bash
+denisfreitas999@DESKTOP-HLKUBTJ:~/scripts$ bash monitoramento.sh
+Nginx fora de operação 2024-07-30 17:58:43
+```
+
+- Agendando tarefas com o crontab com o `$ crontab -e` o arquivo `eta05_monitoramento.sh`. **Verificar a pasta scripts.**
+
+- Atividades
+
+1. Crie um script que utiliza comandos como ps e grep para monitorar os processos que estão utilizando uma porcentagem significativa da CPU.
+2. Desenvolva um script que utiliza comandos como ps e sort para exibir os processos que estão consumindo mais memória.
+3. Crie um script que verifica se um processo específico está em execução e exibe seu status.
+4. Elabore um script para analisar os logs do sistema em busca de mensagens de erro relacionadas a processos.
+5. Crie um script para monitorar as mensagens de erro no log do sistema em intervalos regulares usando cron jobs. O script deve registrar em um arquivo as últimas 5 linhas de mensagens de erro, possibilitando uma visão periódica da atividade do sistema.
