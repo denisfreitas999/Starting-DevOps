@@ -121,3 +121,28 @@ denisfreitas999@DESKTOP-HLKUBTJ:~$
 **Verificar a pasta scripts**
 
 ***
+
+**Etapa 04**
+
+- Executando múltiplas tarefas
+
+Criando um script para compactação e descompactação de arquivos: `ferramenta_compactacao.sh`. **Verificar a pasta scripts.**
+
+Instalando um servidor web
+
+    `$ sudo apt-get install nginx`
+Verificando status do nginx
+
+    `$ sudo systemctl status nginx`
+    
+- Atividades
+
+1. Elabore um script que automatiza a atualização de pacotes do sistema operacional.
+2. Crie um script que renomeie todos os arquivos em um diretório, adicionando um prefixo ou sufixo especificado.
+3. Desenvolva um script que automatiza a criação de usuários no sistema, solicitando ao usuário que forneça o nome e outros detalhes necessários.
+4. Construa um script para monitorar o espaço em disco usando o comando df na coleta de informações.
+5. Escreva um script para automatizar o backup de um diretório específico para um local de destino, utilizando a compressão gzip.
+
+**Verificar a pasta scripts**
+
+***
