@@ -2,6 +2,7 @@
 
 #### Course 01 - Explorando Conceitos, Comandos e Scripts no Linux CLI (01 - 05)
 #### Course 02 - Trabalhando com Tráfego Seguro em Comunicações Web (06 - 10)
+#### Course 03 - Trabalhando com repositórios no GitHub (11 - 15)
 
 ## Índice
 
@@ -15,6 +16,11 @@
 8. [Mensagens HTTP e Autenticação](#08-mensagens-http-e-autenticação)
 9. [Segurança e Criptografia em Redes](#09-segurança-e-criptografia-em-redes)
 10. [Protocolo HTTP e Evolução](#10-protocolo-http-e-evolução)
+11. [Criação e Conexão de Repositórios](#11-criação-e-conexão-de-repositórios)
+12. [Trabalho com Branches e Merge](#12-trabalho-com-branches-e-merge)
+13. [Resolução de Conflitos e Pull Requests](#13-resolução-de-conflitos-e-pull-requests)
+14. [Integração Contínua com GitHub Actions](#14-integração-contínua-com-github-actions)
+15. [Automatização com Dependabot](#15-automatização-com-dependabot)
 
 ## 01. Fundamentos do Sistema Operacional
 
@@ -106,3 +112,48 @@ Finalizei com o estudo do protocolo HTTP e sua evolução:
 - **Os protocolos UDP e TCP da camada de transporte atuando na transmissão de dados entre dispositivos em uma rede**: Estudo dos protocolos de transporte UDP e TCP.
 - **O protocolo QUIC sendo criado a partir do protocolo UDP para possibilitar a criação da versão 3 do protocolo HTTP, reconhecida pelo seu alto desempenho**: Compreensão do protocolo QUIC.
 - **O protocolo HTTP evoluindo para tornar a comunicação web mais eficiente, segura e ágil**: Evolução do protocolo HTTP.
+
+## 11. Criação e Conexão de Repositórios
+
+Nesta etapa, configurei repositórios locais e remotos, além de entender as diferenças entre Git e GitHub:
+
+- **Criando um repositório git local com os comandos `git init` e `git branch -M main` e o repositório remoto para poder compartilhar o seu código com outras pessoas**: Inicialização e configuração de repositórios.
+- **Conectando um repositório local com um remoto através do comando `git remote add origin URL`**: Conexão entre repositórios locais e remotos.
+- **Entendendo que o Git e o GitHub são diferentes. Enquanto o Git é a ferramenta responsável pelo controle do versionamento de códigos, o GitHub é a plataforma responsável pelos repositórios**: Compreensão das funções de Git e GitHub.
+- **Criando um commit para registrar as alterações realizadas no projeto com o comando `git commit -m "Mensagem que descreve as mudanças"`**: Registro de alterações com commits.
+- **Enviando e trazendo alterações feitas para os repositórios local e remoto por meio dos comandos `git push origin main` e `git pull origin main`**: Sincronização entre repositórios.
+- **Cuidando do fluxo de trabalho em projetos colaborativos usando os comandos Git, como `git status`, `git add`, `git commit`, `git push`, e `git pull`**: Gerenciamento de fluxo de trabalho colaborativo.
+
+## 12. Trabalho com Branches e Merge
+
+Nesta etapa, explorei o trabalho com branches e a integração de mudanças:
+
+- **Criando uma nova branch para trabalhar com ramificações em repositórios Git, através do comando `git checkout -b nova-branch`**: Criação de branches.
+- **Entendendo como funcionam as branches e como elas ajudam a isolar mudanças para que o código principal não seja afetado**: Isolamento de mudanças com branches.
+- **Realizando um merge de uma branch em outra usando o comando `git merge`, para mesclar as alterações das duas branches**: Integração de mudanças com merge.
+- **Usando o Gitflow ou o Trunk Based para gerenciar as ramificações do seu projeto**: Gerenciamento de ramificações com Gitflow ou Trunk Based.
+
+## 13. Resolução de Conflitos e Pull Requests
+
+Aqui, foquei em resolução de conflitos e revisão de código:
+
+- **Resolvendo um conflito, quando um mesmo arquivo é editado por duas pessoas diferentes, através da análise do código, para decidir o que manter e o que descartar**: Resolução de conflitos de código.
+- **Criando uma issue para descrever e documentar as tarefas que devem ser feitas no ciclo de desenvolvimento de um software**: Documentação de tarefas com issues.
+- **Usando o recurso de Pull Requests para solicitar a revisão de um código antes de ele ser integrado a outra branch**: Revisão de código com Pull Requests.
+
+## 14. Integração Contínua com GitHub Actions
+
+Nesta etapa, explorei a automação de integração contínua:
+
+- **Definindo a Integração Contínua como a prática de automatizar as atualizações de código no repositório, para ocorrer integração no código-fonte e a execução frequente de testes com o objetivo de detectar e corrigir problemas de integração, o que é bastante importante no dia a dia de DevOps**: Conceito de Integração Contínua.
+- **Aplicando a Integração Contínua através da configuração de um workflow do GitHub Actions**: Configuração de workflows de CI com GitHub Actions.
+- **Testando e visualizando o funcionamento do workflow de Integração Contínua**: Testes e monitoramento de workflows.
+- **Aplicando proteção de branches para garantir que todos os códigos integrados à main passem antes pela revisão através de um PR e que o código seja testado pelo workflow de CI**: Proteção de branches e revisão de código.
+
+## 15. Automatização com Dependabot
+
+Finalizei com a automação de segurança e atualizações usando Dependabot:
+
+- **Ativando alertas de vulnerabilidade nas dependências do projeto através do Dependabot**: Monitoramento de vulnerabilidades com Dependabot.
+- **Automatizando a resolução das vulnerabilidades, configurando o Dependabot para tentar resolver e abrir Pull Requests com as resoluções**: Automação de resolução de vulnerabilidades.
+- **Configurando a atualização automática de versões com o Dependabot**: Atualizações automáticas de dependências.
