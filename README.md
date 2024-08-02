@@ -3,7 +3,7 @@
 #### Course 01 - Explorando Conceitos, Comandos e Scripts no Linux CLI (01 - 05)
 #### Course 02 - Trabalhando com Tráfego Seguro em Comunicações Web (06 - 10)
 #### Course 03 - Trabalhando com repositórios no GitHub (11 - 15)
-
+#### Course 04 - Construindo e Gerindo Containers com o Docker (16 - 20)
 ## Índice
 
 1. [Fundamentos do Sistema Operacional](#01-fundamentos-do-sistema-operacional)
@@ -21,6 +21,11 @@
 13. [Resolução de Conflitos e Pull Requests](#13-resolução-de-conflitos-e-pull-requests)
 14. [Integração Contínua com GitHub Actions](#14-integração-contínua-com-github-actions)
 15. [Automatização com Dependabot](#15-automatização-com-dependabot)
+16. [Containers vs. Máquinas Virtuais e Instalação do Docker](#16-containers-vs-máquinas-virtuais-e-instalação-do-docker)
+17. [Gerenciamento de Containers com Docker CLI](#17-gerenciamento-de-containers-com-docker-cli)
+18. [Estrutura de Imagens e Criação de Containers](#18-estrutura-de-imagens-e-criação-de-containers)
+19. [Persistência de Dados em Containers](#19-persistência-de-dados-em-containers)
+20. [Integração com Serviços em Nuvem e Docker Compose](#20-integração-com-serviços-em-nuvem-e-docker-compose)
 
 ## 01. Fundamentos do Sistema Operacional
 
@@ -157,3 +162,53 @@ Finalizei com a automação de segurança e atualizações usando Dependabot:
 - **Ativando alertas de vulnerabilidade nas dependências do projeto através do Dependabot**: Monitoramento de vulnerabilidades com Dependabot.
 - **Automatizando a resolução das vulnerabilidades, configurando o Dependabot para tentar resolver e abrir Pull Requests com as resoluções**: Automação de resolução de vulnerabilidades.
 - **Configurando a atualização automática de versões com o Dependabot**: Atualizações automáticas de dependências.
+
+## 16. Containers vs. Máquinas Virtuais e Instalação do Docker
+
+Nesta etapa, aprofundei o entendimento sobre containers, sua função e instalação do Docker:
+
+- **Entendendo a diferença entre containers e máquinas virtuais como soluções de virtualização para isolamento de ambientes**: Comparação entre containers e máquinas virtuais.
+- **Compreendendo que os containers compartilham o mesmo kernel do sistema operacional e isolam apenas processos do espaço do usuário**: Funcionamento dos containers e isolamento de processos.
+- **Explorando como os containers constituem uma solução eficiente para encapsulamento de aplicações e suas dependências, mantendo seu conteúdo isolado do sistema do host**: Encapsulamento de aplicações com containers.
+- **Instalando o Docker em um computador para utilizar a virtualização baseada em containers**: Instalação do Docker.
+- **Entendendo a função dos namespaces na garantia de isolamento total dos containers em relação ao seu host**: Papel dos namespaces no isolamento de containers.
+- **Utilizando os comandos do Docker para criação e verificação do status de containers**: Operações básicas com containers usando Docker CLI.
+- **Reconhecendo o papel do Docker Hub como registry no armazenamento, gerenciamento e distribuição de imagens para criação de containers**: Utilização do Docker Hub como repositório de imagens.
+
+## 17. Gerenciamento de Containers com Docker CLI
+
+Nesta etapa, explorei o gerenciamento de containers com comandos do Docker:
+
+- **Atuando com o Docker como uma container engine para criação e gerenciamento de containers**: Uso do Docker como motor de containers.
+- **Usando comandos da Docker CLI para iniciar, pausar, parar e retomar a execução de um container**: Comandos para controle de execução de containers.
+- **Utilizando diferentes opções com o comando `docker run` para definir configurações no momento da criação de um container**: Configuração de containers com `docker run`.
+- **Interagindo com containers em execução para utilizar a aplicação ou sistema operacional encapsulado**: Interação com containers ativos.
+- **Realizando o mapeamento de portas para possibilitar o acesso externo à aplicação em execução dentro de um container usando o Dockerfile**: Configuração de acesso externo via mapeamento de portas.
+
+## 18. Estrutura de Imagens e Criação de Containers
+
+Nesta etapa, compreendi a estrutura de imagens e como criar e compartilhar containers:
+
+- **Estruturando imagens e containers em camadas para proporcionar eficiência na utilização de recursos e distribuição de aplicações**: Estruturação em camadas de imagens e containers.
+- **Inspecionando a estrutura das imagens para analisar as principais características de suas camadas**: Análise da estrutura de imagens Docker.
+- **Criando uma imagem utilizando o Dockerfile para implementar aplicações utilizando containers**: Criação de imagens personalizadas com Dockerfile.
+- **Subindo uma imagem no Docker Hub para compartilhar com a comunidade ou para uso em outros ambientes**: Compartilhamento de imagens no Docker Hub.
+
+## 19. Persistência de Dados em Containers
+
+Nesta etapa, explorei diferentes métodos de persistência de dados em containers Docker:
+
+- **Explorando diferentes mecanismos de persistência de dados no Docker para garantir a continuidade e segurança das informações geradas por aplicações conteinerizadas**: Mecanismos de persistência de dados em Docker.
+- **Criando e utilizando bind mounts, vinculando pastas no sistema host aos diretórios dentro dos containers, para implementar um mecanismo de persistência de dados**: Persistência de dados com bind mounts.
+- **Gerenciando volumes no Docker para criar, utilizar e verificar a persistência de dados entre diferentes execuções de containers**: Uso de volumes para persistência de dados.
+- **Adotando a persistência temporária usando `tmpfs` ao executar containers, compreendendo seu caráter temporário e sua aplicação em ambientes específicos**: Uso de `tmpfs` para persistência temporária.
+
+## 20. Integração com Serviços em Nuvem e Docker Compose
+
+Finalizei com a integração de containers com serviços em nuvem e coordenação com Docker Compose:
+
+- **Realizando a integração de aplicações conteinerizadas com serviços em nuvem para efetiva implantação da aplicação em um ambiente de produção**: Integração de containers com serviços em nuvem.
+- **Criando uma conta de acesso para utilizar serviços em nuvem oferecidos pela Amazon**: Configuração de conta AWS.
+- **Configurando instâncias no Amazon Elastic Beanstalk para a implantação de aplicações**: Implantação de aplicações no AWS Elastic Beanstalk.
+- **Utilizando o Docker Compose com arquivos de configuração YAML para coordenar containers**: Coordenação de containers com Docker Compose.
+- **Entendendo que o Docker Compose atua na coordenação de containers, enquanto ferramentas como Kubernetes e Docker Swarm assumem funções de orquestração**: Diferença entre Docker Compose e orquestradores como Kubernetes e Docker Swarm.
